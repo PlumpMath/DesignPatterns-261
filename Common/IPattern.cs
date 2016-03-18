@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Common
 {
-    interface IPattern
+    public interface IPattern
     {
         void GetView();
     }

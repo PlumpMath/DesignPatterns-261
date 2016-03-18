@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{A521B4E1-8A4B-46A0-BD30-0C7951F1A88D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{FA5BC9AC-21CD-4167-B45F-29ED544DF885}"
@@ -15,7 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{D0D84905-7E55-404F-BFEB-5BA832178FAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "Starter\Starter.csproj", "{6560A8B4-3AC7-4051-BAAE-3BBD487738AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Starter", "Starter\DP.Starter.csproj", "{6560A8B4-3AC7-4051-BAAE-3BBD487738AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +111,18 @@ Global
 		{6560A8B4-3AC7-4051-BAAE-3BBD487738AC}.Release|Mixed Platforms.Build.0 = Release|x86
 		{6560A8B4-3AC7-4051-BAAE-3BBD487738AC}.Release|x86.ActiveCfg = Release|x86
 		{6560A8B4-3AC7-4051-BAAE-3BBD487738AC}.Release|x86.Build.0 = Release|x86
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Debug|x86.Build.0 = Debug|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Release|x86.ActiveCfg = Release|Any CPU
+		{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
