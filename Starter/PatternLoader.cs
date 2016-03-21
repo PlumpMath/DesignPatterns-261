@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using Common;
 
 namespace Starter
 {
@@ -27,8 +28,12 @@ namespace Starter
                 }
             }
             AppDomain.Unload(patternsDomain);
-            //var ttt = Activator.CreateInstance(patternTypes.ElementAtOrDefault(0));
             return patternTypes;
+        }
+
+        public IPattern GetPattern(Type type)
+        {
+            return Activator.CreateInstance(type) as IPattern;
         }
     }
 }

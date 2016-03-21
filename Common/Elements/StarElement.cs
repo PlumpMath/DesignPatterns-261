@@ -6,7 +6,7 @@ using Common.Elements.Base;
 namespace Common.Elements
 {
     [Description("Star")]
-    public class StarElement : BaseElement
+    internal class StarElement : BaseElement
     {
         public override string MethodName
         {

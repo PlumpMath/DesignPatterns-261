@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Common
 {
     public interface IPattern
     {
-        void GetView();
+        Control GetView { get; }
+        Dictionary<string, string> SourceCode { get; }
     }
 }

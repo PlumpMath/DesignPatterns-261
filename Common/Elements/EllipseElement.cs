@@ -4,7 +4,7 @@ using Common.Elements.Base;
 namespace Common.Elements
 {
     [Description("Ellipse")]
-    public class EllipseElement : BaseElement
+    internal class EllipseElement : BaseElement
     {
         public override string MethodName
         {

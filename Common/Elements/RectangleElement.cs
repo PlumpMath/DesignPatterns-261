@@ -4,7 +4,7 @@ using Common.Elements.Base;
 namespace Common.Elements
 {
     [Description("Rect")]
-    public class RectangleElement : BaseElement
+    internal class RectangleElement : BaseElement
     {
         public override string MethodName
         {
