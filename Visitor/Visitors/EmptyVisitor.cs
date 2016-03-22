@@ -9,27 +9,30 @@ using Visitor.Elements;
 
 namespace Visitor.Visitors
 {
-    public class FillVisitor:BaseVisitor
+    public class EmptyVisitor : BaseVisitor
     {
-        private Brush _brush = Brushes.Blue;
-        public FillVisitor(Graphics graphics)
-            :base(graphics)
+        private Pen _pen = Pens.Blue;
+
+        public EmptyVisitor(Graphics graphics)
+            : base(graphics)
         {
-            
+
         }
+
         public override void Visit(EllipseElement ellipse)
         {
-            _graphics.FillEllipse(_brush,ellipse.Rect);
+            _graphics.DrawEllipse(_pen, ellipse.Rect);
         }
 
         public override void Visit(RectangleElement rectangle)
         {
-            _graphics.FillRectangle(_brush, rectangle.Rect);
+            _graphics.DrawRectangle(_pen, rectangle.Rect);
         }
 
         public override void Visit(StarElement star)
         {
-            _graphics.FillPolygon(_brush, BaseStarElement.Calculate5StarPoints(star.Rect.Location, star.Rect.Width, star.Rect.Width / 2));
+            _graphics.DrawPolygon(_pen,
+                BaseStarElement.Calculate5StarPoints(star.Rect.Location, star.Rect.Width, star.Rect.Width/2));
             //_graphics.FillEllipse(_brush, s);
         }
     }

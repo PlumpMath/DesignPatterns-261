@@ -3,12 +3,12 @@ using Common.Elements.Base;
 
 namespace Common.Elements
 {
-    [Description("Rect")]
-    internal class RectangleElement : BaseElement
+    [Description("Ellipse")]
+    public class BaseEllipseElement : BaseElement
     {
         public override string MethodName
         {
-            get { return "Rectangle"; }
+            get { return "Ellipse"; }
         }
 
         public override object GetGeometryStruct

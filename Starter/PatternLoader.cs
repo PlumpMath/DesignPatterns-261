@@ -10,9 +10,9 @@ namespace Starter
 {
     public class PatternLoader
     {
-        public IEnumerable<Type> GetPatternNames()
+        public IEnumerable<Type> GetPatternTypes()
         {
-            IEnumerable<Type> patternTypes = null;
+            List<Type> patternTypes = new List<Type>();
             var patternsDomain = AppDomain.CreateDomain("PatternsDomain");
             DirectoryInfo di = new DirectoryInfo(Directory.GetCurrentDirectory());
             foreach (var file in di.GetFiles().Where(f=>f.Name.EndsWith(".dll") || f.Name.EndsWith(".exe")))
@@ -20,7 +20,7 @@ namespace Starter
                 try
                 {
                     Assembly assembly =  patternsDomain.Load(AssemblyName.GetAssemblyName(file.Name));
-                    patternTypes =  assembly.GetTypes().Where(t => t.GetInterface("IPattern")!=null);
+                    patternTypes.AddRange(assembly.GetTypes().Where(t => t.GetInterface("IPattern")!=null));
                 }
                 catch (Exception)
                 {

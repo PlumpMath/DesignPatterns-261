@@ -80,7 +80,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControlPattern;
-        private System.Windows.Forms.TabPage tabPageUI;
-        private System.Windows.Forms.TabPage tabPageSourceCode;
+        protected System.Windows.Forms.TabPage tabPageUI;
+        protected System.Windows.Forms.TabPage tabPageSourceCode;
     }
 }

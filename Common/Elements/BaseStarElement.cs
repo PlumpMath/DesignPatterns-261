@@ -6,7 +6,7 @@ using Common.Elements.Base;
 namespace Common.Elements
 {
     [Description("Star")]
-    internal class StarElement : BaseElement
+    public class BaseStarElement : BaseElement
     {
         public override string MethodName
         {
@@ -25,7 +25,7 @@ namespace Common.Elements
         /// <param name="outerradius">Radius of the surrounding circle.</param>
         /// <param name="innerradius">Radius of the circle for the "inner" points</param>
         /// <returns>Array of 10 PointF structures</returns>
-        private PointF[] Calculate5StarPoints(PointF Orig, float outerradius, float innerradius)
+        public static PointF[] Calculate5StarPoints(PointF Orig, float outerradius, float innerradius)
         {
             // Define some variables to avoid as much calculations as possible
             // conversions to radians

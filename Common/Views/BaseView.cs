@@ -16,15 +16,14 @@ namespace Common.Views
             InitializeComponent();
         }
 
-        public void Load(IPattern pattern)
-        {
-            pattern.GetView.Dock = DockStyle.Fill;
-            tabPageUI.Controls.Add(pattern.GetView);
-            foreach (var key in pattern.SourceCode.Keys)
-            {
+        //public void Init(IPattern pattern)
+        //{
+        //    pattern.GetView.Dock = DockStyle.Fill;
+        //    tabPageUI.Controls.Add(pattern.GetView);
+        //    foreach (var key in pattern.SourceCode.Keys)
+        //    {
                 
-            }
-        }
-
+        //    }
+        //}
     }
 }
