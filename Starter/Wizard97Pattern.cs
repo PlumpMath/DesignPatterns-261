@@ -69,16 +69,21 @@ namespace Starter
         static string GetToolTip(string text)
         {
             StringBuilder sb = new StringBuilder();
-            int i=0,lasti = 0;
+            int curLength = 0,N=50;
             var parts = text.Split();
-            //parts.TakeWhile(count=>)
-            while (i<text.Length && i>-1)
+            foreach(var part in parts)
             {
-                i = text.IndexOf(' ',i+1);
-                if (i - lasti > 50)
+                if (curLength + part.Length > N)
                 {
-                    sb.AppendLine(text.Substring(lasti, i));
-                    lasti = i;
+                    sb.AppendLine($" {part}");
+                    curLength = 0;
+                }
+                else
+                {
+                    if (sb.Length > 0)
+                        sb.Append(' ');
+                    sb.Append(part);
+                    curLength += part.Length;
                 }
             }
             return sb.ToString();
