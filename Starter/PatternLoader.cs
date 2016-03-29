@@ -5,6 +5,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using Common;
+using ICSharpCode.ILSpy;
+using ICSharpCode.Decompiler;
 
 namespace Starter
 {
@@ -31,9 +33,21 @@ namespace Starter
             return patternTypes;
         }
 
-        public IPattern GetPattern(Type type)
+        public void GetSourceCode(Type type)
         {
-            return Activator.CreateInstance(type) as IPattern;
+            var assembly = Assembly.GetAssembly(type);
+            var assemblyDefenition = Mono.Cecil.AssemblyDefinition.ReadAssembly(assembly.Location);
+            CSharpLanguage lang = new CSharpLanguage();
+            foreach (var m in assemblyDefenition.Modules)
+            {
+                foreach(var t in m.GetTypes().Where(ft=>ft.CustomAttributes.Count(ca=>ca.AttributeType.Equals(typeof(PatternSourceCodeAttribute)))>0))
+                {
+                    ITextOutput
+                    lang.DecompileType(t,)
+                    //t.Methods[0].b
+                }
+            }
+            
         }
     }
 }

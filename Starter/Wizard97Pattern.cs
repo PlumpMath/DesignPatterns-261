@@ -96,6 +96,7 @@ namespace Starter
         private void wizardPage2_Initialize(object sender, AeroWizard.WizardPageInitEventArgs e)
         {
             var pattern = Activator.CreateInstance(_currentPatternType) as IPattern;
+            _patternLoader.GetSourceCode(_currentPatternType);
             //wizardPage2.Controls.Add(pattern.GetView);
 
         }

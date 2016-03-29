@@ -9,6 +9,6 @@ namespace Common
     public interface IPattern
     {
         Control GetView { get; }
-        Dictionary<string, string> SourceCode { get; }
+        //Dictionary<string, string> SourceCode { get; }
     }
 }

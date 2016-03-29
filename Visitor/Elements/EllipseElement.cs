@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -8,6 +9,7 @@ using Visitor.Visitors;
 
 namespace Visitor.Elements
 {
+    [PatternSourceCode]
     public class EllipseElement : BaseElement
     {
         protected EllipseElement(Rectangle rect)
