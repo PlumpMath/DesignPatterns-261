@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common;
-using Common.Views;
 using Visitor.Views;
 
 namespace Visitor
@@ -17,7 +16,7 @@ namespace Visitor
     public class VisitorPattern : IPattern
     {
         private readonly Lazy<VisitorView> _baseView = new Lazy<VisitorView>();
-        BaseView IPattern.GetView
+        Control IPattern.GetView
         {
             get { return _baseView.Value; }
         }

@@ -24,10 +24,6 @@ namespace Starter
             Close();
         }
 
-        private void wizardPageContainer1_SelectedPageChanged(object sender, EventArgs e)
-        {
-        }
-
         private void wizardPage1_Initialize(object sender, AeroWizard.WizardPageInitEventArgs e)
         {
             var patternTypes =  _patternLoader.GetPatternTypes();
@@ -100,8 +96,17 @@ namespace Starter
         private void wizardPage2_Initialize(object sender, AeroWizard.WizardPageInitEventArgs e)
         {
             var pattern = Activator.CreateInstance(_currentPatternType) as IPattern;
-            wizardPage2.Controls.Add(pattern.GetView);
+            //wizardPage2.Controls.Add(pattern.GetView);
 
+        }
+        private void tabControlPattern_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbCode.Enabled = tabControlPattern.SelectedTab == tabPageSourceCode;
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            wizardPageContainer1.PreviousPage();
         }
     }
 }
