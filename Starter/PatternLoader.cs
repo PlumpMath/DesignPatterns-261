@@ -42,8 +42,8 @@ namespace Starter
             {
                 foreach(var t in m.GetTypes().Where(ft=>ft.CustomAttributes.Count(ca=>ca.AttributeType.Equals(typeof(PatternSourceCodeAttribute)))>0))
                 {
-                    ITextOutput
-                    lang.DecompileType(t,)
+                    //ITextOutput 
+                    //lang.DecompileType(t,)
                     //t.Methods[0].b
                 }
             }
