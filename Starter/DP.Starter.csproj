@@ -106,18 +106,21 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatternForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatternForm.Designer.cs">
+      <DependentUpon>PatternForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PatternLoader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypeSource.cs" />
-    <Compile Include="Wizard97Pattern.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Wizard97Pattern.Designer.cs">
-      <DependentUpon>Wizard97Pattern.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatternForm.resx">
+      <DependentUpon>PatternForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,9 +132,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Wizard97Pattern.resx">
-      <DependentUpon>Wizard97Pattern.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -149,12 +149,6 @@
       <Project>{b544b432-7b49-4985-9126-7e62270c05d6}</Project>
       <Name>Common</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Back.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Back1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

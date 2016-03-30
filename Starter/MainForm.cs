@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -16,18 +17,7 @@ namespace Starter
         public MainForm()
         {
             InitializeComponent();
-        }
-
-        private void wizardPage1_Initialize(object sender, AeroWizard.WizardPageInitEventArgs e)
-        {
-            var patternTypes = _patternLoader.GetPatternTypes();
-            int i = 0;
-            foreach (var type in patternTypes)
-            {
-                CreatePatternButton(type, i);
-                i++;
-            }
-        }
+        }        
 
         private void CreatePatternButton(Type type, int i)
         {
@@ -52,11 +42,11 @@ namespace Starter
                 ToolTip toolTipPattern = new ToolTip();
                 toolTipPattern.ToolTipIcon = ToolTipIcon.Info;
                 toolTipPattern.ToolTipTitle = btnPattern.Text;
-                toolTipPattern.SetToolTip(btnPattern, GetToolTip(descrAttr.Description));
+                toolTipPattern.SetToolTip(btnPattern, GetToolTipWrapText(descrAttr.Description));
             }
         }
 
-        static string GetToolTip(string text)
+        static string GetToolTipWrapText(string text)
         {
             StringBuilder sb = new StringBuilder();
             int curLength = 0, N = 50;
@@ -82,14 +72,18 @@ namespace Starter
         private void BtnPattern_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            _currentPatternType = btn.Tag as Type;
-            wizardPageContainer1.NextPage();
-            //pattern.GetView
+            var currentPatternType = btn.Tag as Type;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            var patternTypes = PatternLoader.GetPatternTypes();
+            int i = 0;
+            foreach (var type in patternTypes)
+            {
+                CreatePatternButton(type, i);
+                i++;
+            }
         }
     }
 }

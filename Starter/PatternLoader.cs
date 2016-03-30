@@ -15,7 +15,7 @@ namespace Starter
 {
     public class PatternLoader
     {
-        public IEnumerable<Type> GetPatternTypes()
+        public static IEnumerable<Type> GetPatternTypes()
         {
             List<Type> patternTypes = new List<Type>();
             var patternsDomain = AppDomain.CreateDomain("PatternsDomain");

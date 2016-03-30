@@ -15,7 +15,7 @@ namespace Starter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Wizard97Pattern());
+            Application.Run(new MainForm());
         }
     }
 }
