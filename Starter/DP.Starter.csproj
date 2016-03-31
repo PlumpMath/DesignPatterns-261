@@ -112,7 +112,7 @@
     <Compile Include="PatternForm.Designer.cs">
       <DependentUpon>PatternForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatternLoader.cs" />
+    <Compile Include="PatternDescription.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypeSource.cs" />

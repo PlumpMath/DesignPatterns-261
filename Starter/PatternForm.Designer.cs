@@ -33,13 +33,13 @@
             this.tabControlPattern = new System.Windows.Forms.TabControl();
             this.tabPageUI = new System.Windows.Forms.TabPage();
             this.tabPageSourceCode = new System.Windows.Forms.TabPage();
-            this.cmbFileName = new System.Windows.Forms.ComboBox();
-            this.cmbLanguage = new System.Windows.Forms.ComboBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
+            this.cmbLanguage = new System.Windows.Forms.ComboBox();
+            this.cmbFileName = new System.Windows.Forms.ComboBox();
             this.tabControlPattern.SuspendLayout();
             this.tabPageSourceCode.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             // 
             // tabPageSourceCode
             // 
-            this.tabPageSourceCode.Controls.Add(this.flowLayoutPanel1);
+            this.tabPageSourceCode.Controls.Add(this.tableLayoutPanel1);
             this.tabPageSourceCode.Location = new System.Drawing.Point(4, 22);
             this.tabPageSourceCode.Name = "tabPageSourceCode";
             this.tabPageSourceCode.Padding = new System.Windows.Forms.Padding(3);
@@ -75,33 +75,23 @@
             this.tabPageSourceCode.Text = "SourceCode";
             this.tabPageSourceCode.UseVisualStyleBackColor = true;
             // 
-            // cmbFileName
+            // tableLayoutPanel1
             // 
-            this.cmbFileName.Enabled = false;
-            this.cmbFileName.FormattingEnabled = true;
-            this.cmbFileName.Location = new System.Drawing.Point(3, 3);
-            this.cmbFileName.Name = "cmbFileName";
-            this.cmbFileName.Size = new System.Drawing.Size(195, 21);
-            this.cmbFileName.TabIndex = 2;
-            // 
-            // cmbLanguage
-            // 
-            this.cmbLanguage.FormattingEnabled = true;
-            this.cmbLanguage.Location = new System.Drawing.Point(204, 3);
-            this.cmbLanguage.Name = "cmbLanguage";
-            this.cmbLanguage.Size = new System.Drawing.Size(170, 21);
-            this.cmbLanguage.TabIndex = 3;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.cmbFileName);
-            this.flowLayoutPanel1.Controls.Add(this.cmbLanguage);
-            this.flowLayoutPanel1.Controls.Add(this.fastColoredTextBox1);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(598, 307);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.cmbLanguage, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.cmbFileName, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.fastColoredTextBox1, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(598, 307);
+            this.tableLayoutPanel1.TabIndex = 5;
             // 
             // fastColoredTextBox1
             // 
@@ -120,18 +110,40 @@
             this.fastColoredTextBox1.BackBrush = null;
             this.fastColoredTextBox1.CharHeight = 14;
             this.fastColoredTextBox1.CharWidth = 8;
+            this.tableLayoutPanel1.SetColumnSpan(this.fastColoredTextBox1, 3);
             this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.fastColoredTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fastColoredTextBox1.IsReplaceMode = false;
-            this.fastColoredTextBox1.Location = new System.Drawing.Point(380, 3);
+            this.fastColoredTextBox1.Location = new System.Drawing.Point(3, 33);
             this.fastColoredTextBox1.Name = "fastColoredTextBox1";
             this.fastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
             this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
-            this.fastColoredTextBox1.Size = new System.Drawing.Size(150, 150);
+            this.fastColoredTextBox1.Size = new System.Drawing.Size(592, 271);
             this.fastColoredTextBox1.TabIndex = 4;
             this.fastColoredTextBox1.Text = "fastColoredTextBox1";
             this.fastColoredTextBox1.Zoom = 100;
+            // 
+            // cmbLanguage
+            // 
+            this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLanguage.FormattingEnabled = true;
+            this.cmbLanguage.Location = new System.Drawing.Point(203, 3);
+            this.cmbLanguage.Name = "cmbLanguage";
+            this.cmbLanguage.Size = new System.Drawing.Size(170, 21);
+            this.cmbLanguage.TabIndex = 3;
+            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
+            // 
+            // cmbFileName
+            // 
+            this.cmbFileName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFileName.FormattingEnabled = true;
+            this.cmbFileName.Location = new System.Drawing.Point(3, 3);
+            this.cmbFileName.Name = "cmbFileName";
+            this.cmbFileName.Size = new System.Drawing.Size(194, 21);
+            this.cmbFileName.TabIndex = 2;
+            this.cmbFileName.SelectedIndexChanged += new System.EventHandler(this.cmbFileName_SelectedIndexChanged);
             // 
             // PatternForm
             // 
@@ -145,7 +157,7 @@
             this.Load += new System.EventHandler(this.PatternForm_Load);
             this.tabControlPattern.ResumeLayout(false);
             this.tabPageSourceCode.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -157,8 +169,8 @@
         protected System.Windows.Forms.TabPage tabPageUI;
         protected System.Windows.Forms.TabPage tabPageSourceCode;
         private System.Windows.Forms.ComboBox cmbFileName;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ComboBox cmbLanguage;
         private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

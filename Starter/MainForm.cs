@@ -19,31 +19,27 @@ namespace Starter
             InitializeComponent();
         }        
 
-        private void CreatePatternButton(Type type, int i)
+        private void CreatePatternButton(PatternDescription patternDesc, int i)
         {
             Button btnPattern = new Button();
-            var dnAttr = type.GetCustomAttribute(typeof(DisplayNameAttribute)) as DisplayNameAttribute;
-            btnPattern.Text = dnAttr != null ? dnAttr.DisplayName : type.Name;
-            btnPattern.Tag = type;
+            btnPattern.Text = patternDesc.DisplayName;
+            btnPattern.Tag = patternDesc;
             btnPattern.Size = new Size(100, 100);
             btnPattern.Location = new Point(20 + 50 * i, 20 + 50 * (i / 3));
             btnPattern.Click -= BtnPattern_Click;
             btnPattern.Click += BtnPattern_Click;
-            btnPattern.Tag = type;
-            CreatePatternToolTip(type, btnPattern);
+            CreatePatternToolTip(patternDesc, btnPattern);
             Controls.Add(btnPattern);
         }
 
-        private void CreatePatternToolTip(Type type, Button btnPattern)
+        private void CreatePatternToolTip(PatternDescription patternDesc, Button btnPattern)
         {
-            var descrAttr = type.GetCustomAttribute(typeof(DescriptionAttribute)) as DescriptionAttribute;
-            if (descrAttr != null)
-            {
-                ToolTip toolTipPattern = new ToolTip();
-                toolTipPattern.ToolTipIcon = ToolTipIcon.Info;
-                toolTipPattern.ToolTipTitle = btnPattern.Text;
-                toolTipPattern.SetToolTip(btnPattern, GetToolTipWrapText(descrAttr.Description));
-            }
+            if (string.IsNullOrEmpty(patternDesc.Description)) return;
+
+            ToolTip toolTipPattern = new ToolTip();
+            toolTipPattern.ToolTipIcon = ToolTipIcon.Info;
+            toolTipPattern.ToolTipTitle = btnPattern.Text;
+            toolTipPattern.SetToolTip(btnPattern, GetToolTipWrapText(patternDesc.Description));
         }
 
         static string GetToolTipWrapText(string text)
@@ -72,14 +68,14 @@ namespace Starter
         private void BtnPattern_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            var patternType = btn.Tag as Type;
+            var patternType = btn.Tag as PatternDescription;
             PatternForm patternForm = new PatternForm(patternType);
             patternForm.Show();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            var patternTypes = PatternLoader.GetPatternTypes();
+            var patternTypes = PatternDescription.GetPatternDescription();
             int i = 0;
             foreach (var type in patternTypes)
             {
