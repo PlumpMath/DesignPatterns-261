@@ -72,7 +72,9 @@ namespace Starter
         private void BtnPattern_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            var currentPatternType = btn.Tag as Type;
+            var patternType = btn.Tag as Type;
+            PatternForm patternForm = new PatternForm(patternType);
+            patternForm.Show();
         }
 
         private void MainForm_Load(object sender, EventArgs e)

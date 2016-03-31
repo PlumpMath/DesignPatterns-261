@@ -12,9 +12,21 @@ namespace Starter
 {
     public partial class PatternForm : Form
     {
+        private readonly Type _patternType;
         public PatternForm()
         {
             InitializeComponent();
+        }
+
+        public PatternForm(Type patternType)
+            :this()
+        {
+            _patternType = patternType;
+        }
+
+        private void PatternForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
