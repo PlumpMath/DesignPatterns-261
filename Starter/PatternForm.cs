@@ -32,7 +32,7 @@ namespace Starter
         {
             Text = _patternDesc.DisplayName;
             _typeSourceList = TypeSource.GetTypesSourceCode(_patternDesc.PatternType);
-            cmbFileName.DataSource = _typeSourceList.ToList(); //.Select(t => t.TypeDef.Name).ToList();
+            cmbFileName.DataSource = _typeSourceList.OrderBy(f => f.TypeDef.Name).ToList(); //.Select(t => t.TypeDef.Name).ToList();
             //cmbLanguage.DataSource = _typeSourceList.Select(t => t.TypeDef.Name);
 
             var pattenr = Activator.CreateInstance(_patternDesc.PatternType) as IPattern;

@@ -2,10 +2,12 @@
 using AbstractFactory.Factories.Base;
 using AbstractFactory.Families.Base;
 using AbstractFactory.Families.Empty;
+using Common;
 
 namespace AbstractFactory.Factories
 {
     [Description("Empty")]
+    [PatternSourceCode]
     public class EmptyFactory : IGuiFactory
     {
         public BaseEllipse CreateEllipse()

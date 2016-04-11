@@ -1,8 +1,10 @@
 ﻿
 using System.Drawing;
+using Common;
 
 namespace AbstractFactory.Families.Base
 {
+    [PatternSourceCode]
     public abstract class BaseElement
     {
         public abstract string Text { get; }

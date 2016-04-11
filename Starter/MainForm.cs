@@ -25,7 +25,7 @@ namespace Starter
             btnPattern.Text = patternDesc.DisplayName;
             btnPattern.Tag = patternDesc;
             btnPattern.Size = new Size(100, 100);
-            btnPattern.Location = new Point(20 + 50 * i, 20 + 50 * (i / 3));
+            btnPattern.Location = new Point(20 + 110 * i, 20 + 100 * (i / 3));
             btnPattern.Click -= BtnPattern_Click;
             btnPattern.Click += BtnPattern_Click;
             CreatePatternToolTip(patternDesc, btnPattern);

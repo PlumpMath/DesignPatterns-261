@@ -20,6 +20,5 @@ namespace Visitor
         {
             get { return _baseView.Value; }
         }
-        public Dictionary<string, string> SourceCode { get; }
     }
 }

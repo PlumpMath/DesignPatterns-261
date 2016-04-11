@@ -10,10 +10,9 @@ using AbstractFactory.Families.Base;
 
 namespace AbstractFactory
 {
-    public partial class AbstractFactoryForm : Form
+    public partial class AbstractFactoryForm : UserControl
     {
         private Graphics graphics;
-        private Point location;
         private Type _currentFactoryType;
         public AbstractFactoryForm()
         {
@@ -23,7 +22,6 @@ namespace AbstractFactory
         private void AbstractFactoryForm_Load(object sender, EventArgs e)
         {
             graphics = panel2.CreateGraphics();
-            location = new Point(panel2.Width / 2, panel2.Height / 2);
             Assembly assembly = Assembly.GetExecutingAssembly();
             var types = assembly.GetTypes().Where(t => t.GetInterface("IGuiFactory")!=null);
             int y = 20;

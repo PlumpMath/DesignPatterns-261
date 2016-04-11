@@ -1,8 +1,10 @@
 ﻿using System.Drawing;
 using AbstractFactory.Families.Base;
+using Common;
 
 namespace AbstractFactory.Families.Empty
 {
+    [PatternSourceCode]
     public class EmptyStar : BaseStar
     {
         public override void Draw()
