@@ -12,7 +12,7 @@ namespace Visitor.Elements
     [PatternSourceCode]
     public class StarElement:BaseElement
     {
-        protected StarElement(Rectangle rect)
+        public StarElement(Rectangle rect)
             :base(rect)
         {
 

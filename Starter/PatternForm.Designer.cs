@@ -34,9 +34,9 @@
             this.tabPageUI = new System.Windows.Forms.TabPage();
             this.tabPageSourceCode = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
             this.cmbLanguage = new System.Windows.Forms.ComboBox();
             this.cmbFileName = new System.Windows.Forms.ComboBox();
+            this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
             this.tabControlPattern.SuspendLayout();
             this.tabPageSourceCode.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -51,7 +51,7 @@
             this.tabControlPattern.Location = new System.Drawing.Point(0, 0);
             this.tabControlPattern.Name = "tabControlPattern";
             this.tabControlPattern.SelectedIndex = 0;
-            this.tabControlPattern.Size = new System.Drawing.Size(612, 339);
+            this.tabControlPattern.Size = new System.Drawing.Size(612, 432);
             this.tabControlPattern.TabIndex = 2;
             // 
             // tabPageUI
@@ -59,7 +59,7 @@
             this.tabPageUI.Location = new System.Drawing.Point(4, 22);
             this.tabPageUI.Name = "tabPageUI";
             this.tabPageUI.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUI.Size = new System.Drawing.Size(604, 313);
+            this.tabPageUI.Size = new System.Drawing.Size(604, 406);
             this.tabPageUI.TabIndex = 0;
             this.tabPageUI.Text = "UI";
             this.tabPageUI.UseVisualStyleBackColor = true;
@@ -93,38 +93,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(598, 307);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
-            // fastColoredTextBox1
-            // 
-            this.fastColoredTextBox1.AutoCompleteBracketsList = new char[] {
-        '(',
-        ')',
-        '{',
-        '}',
-        '[',
-        ']',
-        '\"',
-        '\"',
-        '\'',
-        '\''};
-            this.fastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(179, 14);
-            this.fastColoredTextBox1.BackBrush = null;
-            this.fastColoredTextBox1.CharHeight = 14;
-            this.fastColoredTextBox1.CharWidth = 8;
-            this.tableLayoutPanel1.SetColumnSpan(this.fastColoredTextBox1, 3);
-            this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.fastColoredTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fastColoredTextBox1.IsReplaceMode = false;
-            this.fastColoredTextBox1.Location = new System.Drawing.Point(3, 33);
-            this.fastColoredTextBox1.Name = "fastColoredTextBox1";
-            this.fastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
-            this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
-            this.fastColoredTextBox1.Size = new System.Drawing.Size(592, 271);
-            this.fastColoredTextBox1.TabIndex = 4;
-            this.fastColoredTextBox1.Text = "fastColoredTextBox1";
-            this.fastColoredTextBox1.Zoom = 100;
-            // 
             // cmbLanguage
             // 
             this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -145,11 +113,43 @@
             this.cmbFileName.TabIndex = 2;
             this.cmbFileName.SelectedIndexChanged += new System.EventHandler(this.cmbFileName_SelectedIndexChanged);
             // 
+            // fastColoredTextBox1
+            // 
+            this.fastColoredTextBox1.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+            this.fastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(154, 14);
+            this.fastColoredTextBox1.BackBrush = null;
+            this.fastColoredTextBox1.CharHeight = 14;
+            this.fastColoredTextBox1.CharWidth = 8;
+            this.tableLayoutPanel1.SetColumnSpan(this.fastColoredTextBox1, 3);
+            this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.fastColoredTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fastColoredTextBox1.IsReplaceMode = false;
+            this.fastColoredTextBox1.Location = new System.Drawing.Point(3, 33);
+            this.fastColoredTextBox1.Name = "fastColoredTextBox1";
+            this.fastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
+            this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
+            this.fastColoredTextBox1.Size = new System.Drawing.Size(592, 271);
+            this.fastColoredTextBox1.TabIndex = 4;
+            this.fastColoredTextBox1.Text = "fastColoredTextBox1";
+            this.fastColoredTextBox1.Zoom = 100;
+            // 
             // PatternForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 339);
+            this.ClientSize = new System.Drawing.Size(612, 432);
             this.Controls.Add(this.tabControlPattern);
             this.Name = "PatternForm";
             this.ShowIcon = false;

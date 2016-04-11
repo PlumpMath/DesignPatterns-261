@@ -12,7 +12,7 @@ namespace Visitor.Elements
     [PatternSourceCode]
     public class EllipseElement : BaseElement
     {
-        protected EllipseElement(Rectangle rect)
+        public EllipseElement(Rectangle rect)
             :base(rect)
         {
             

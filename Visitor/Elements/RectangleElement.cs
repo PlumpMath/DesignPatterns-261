@@ -12,7 +12,7 @@ namespace Visitor.Elements
     [PatternSourceCode]
     public class RectangleElement : BaseElement
     {
-        protected RectangleElement(Rectangle rect)
+        public RectangleElement(Rectangle rect)
             :base(rect)
         {
 

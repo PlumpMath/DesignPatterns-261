@@ -19,5 +19,10 @@ namespace Visitor.Elements
         {
             Rect = rect;
         }
+
+        public override string ToString()
+        {
+            return GetType().Name;
+        }
     }
 }
