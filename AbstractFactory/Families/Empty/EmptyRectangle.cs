@@ -1,7 +1,7 @@
 ﻿
 using System.Drawing;
 using AbstractFactory.Families.Base;
-using Common;
+using DP.Common;
 
 namespace AbstractFactory.Families.Empty
 {

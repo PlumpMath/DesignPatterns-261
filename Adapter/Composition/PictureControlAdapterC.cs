@@ -2,9 +2,11 @@
 using System.Drawing;
 using System.Windows.Forms;
 using Adapter.Interfaces;
+using DP.Common;
 
 namespace Adapter.Composition
 {
+    [PatternSourceCode]
     public class PictureControlAdapterC : Control, IPictureControl
     {
         private readonly   Lazy<PictureBox> _pictureBox = new Lazy<PictureBox>();

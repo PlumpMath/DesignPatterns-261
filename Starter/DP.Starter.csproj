@@ -145,9 +145,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
+    <ProjectReference Include="..\Common\DP.Common.csproj">
       <Project>{b544b432-7b49-4985-9126-7e62270c05d6}</Project>
-      <Name>Common</Name>
+      <Name>DP.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

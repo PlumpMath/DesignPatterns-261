@@ -2,9 +2,11 @@
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 using Adapter.Interfaces;
+using DP.Common;
 
 namespace Adapter.Controls
 {
+    [PatternSourceCode]
     public partial class GraphicsControl : UserControl, IPictureControl
     {
         private Image _image;

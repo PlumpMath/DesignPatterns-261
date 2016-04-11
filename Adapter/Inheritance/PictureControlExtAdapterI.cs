@@ -1,8 +1,10 @@
 ﻿using System.Drawing;
 using Adapter.Interfaces;
+using DP.Common;
 
 namespace Adapter.Inheritance
 {
+    [PatternSourceCode]
     public class PictureControlExtAdapterI : PictureControlAdapterI, IPictureControlExt
     {
         public void Save(string fileName)

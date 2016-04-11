@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Deco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{FA5BC9AC-21CD-4167-B45F-29ED544DF885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{B544B432-7B49-4985-9126-7E62270C05D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Common", "Common\DP.Common.csproj", "{B544B432-7B49-4985-9126-7E62270C05D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{D8D8122E-61D3-44CC-8448-30AD4666E4F6}"
 EndProject

@@ -1,8 +1,10 @@
 ﻿using System.Drawing;
 using Adapter.Interfaces;
+using DP.Common;
 
 namespace Adapter.Controls
 {
+    [PatternSourceCode]
     public partial class GraphicsControlExt : GraphicsControl, IPictureControlExt
     {
         public GraphicsControlExt()

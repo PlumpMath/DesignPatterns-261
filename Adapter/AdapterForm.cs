@@ -11,7 +11,7 @@ using Adapter.Interfaces;
 
 namespace Adapter
 {
-    public partial class AdapterForm : Form
+    public partial class AdapterForm : UserControl
     {
         private readonly List<IPictureControl> _pictureControlList = new List<IPictureControl>();
         private readonly List<IPictureControlExt> _pictureControlExtList = new List<IPictureControlExt>();

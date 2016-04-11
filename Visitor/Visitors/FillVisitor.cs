@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Common.Elements;
+﻿using System.Drawing;
 using Visitor.Elements;
+using DP.Common;
 
 namespace Visitor.Visitors
 {

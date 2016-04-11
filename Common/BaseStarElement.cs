@@ -1,30 +1,20 @@
 ﻿using System;
-using System.ComponentModel;
+using System.Collections.Generic;
 using System.Drawing;
-using Common.Elements.Base;
+using System.Linq;
+using System.Text;
 
-namespace Common.Elements
+namespace DP.Common
 {
-    [Description("Star")]
-    public class BaseStarElement : BaseElement
-    {
-        public override string MethodName
-        {
-            get { return "Polygon"; }
-        }
-
-        public override object GetGeometryStruct
-        {
-            get { return Calculate5StarPoints(Rect.Location, Rect.Width, Rect.Width / 2); }
-        }
-
+    public class BaseStarElement
+    { 
         /// <summary>
-        /// Return an array of 10 points to be used in a Draw- or FillPolygon method
-        /// </summary>
-        /// <param name="Orig"> The origin is the middle of the star.</param>
-        /// <param name="outerradius">Radius of the surrounding circle.</param>
-        /// <param name="innerradius">Radius of the circle for the "inner" points</param>
-        /// <returns>Array of 10 PointF structures</returns>
+      /// Return an array of 10 points to be used in a Draw- or FillPolygon method
+      /// </summary>
+      /// <param name="Orig"> The origin is the middle of the star.</param>
+      /// <param name="outerradius">Radius of the surrounding circle.</param>
+      /// <param name="innerradius">Radius of the circle for the "inner" points</param>
+      /// <returns>Array of 10 PointF structures</returns>
         public static PointF[] Calculate5StarPoints(PointF Orig, float outerradius, float innerradius)
         {
             // Define some variables to avoid as much calculations as possible

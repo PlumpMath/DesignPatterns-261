@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 using AbstractFactory.Families.Base;
-using Common;
+using DP.Common;
 
 namespace AbstractFactory.Families.Fill
 {
@@ -9,7 +9,7 @@ namespace AbstractFactory.Families.Fill
     {
         public override void Draw()
         {
-            Graphics.FillPolygon(Brushes.Yellow, Calculate5StarPoints(Rect.Location, Rect.Width, Rect.Width / 2));
+            Graphics.FillPolygon(Brushes.Yellow, BaseStarElement.Calculate5StarPoints(Rect.Location, Rect.Width, Rect.Width / 2));
         }
     }
 }
