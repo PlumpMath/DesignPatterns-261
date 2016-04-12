@@ -1,11 +1,13 @@
-﻿using System;
+﻿using DP.Common.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 
-namespace TemplateMethod.Methods
+namespace DP.TemplateMethod.Methods
 {
+    [PatternSourceCode]
     public abstract class BasePaint
     {
         protected Graphics _graphics;

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
-using Strategy.Behaviors.Base;
-using Strategy.Elements.Base;
+using DP.Strategy.Behaviors.Base;
+using DP.Strategy.Elements.Base;
 using System.Drawing;
+using DP.Common.Attributes;
 
-namespace Strategy.Behaviors.MoveBehaviors
+namespace DP.Strategy.Behaviors.MoveBehaviors
 {
     [Description("Grow")]
+    [PatternSourceCode]
     public class GrowMoveBehavior : BaseBehavior
     {
         protected int iteration;

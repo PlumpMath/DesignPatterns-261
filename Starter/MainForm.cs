@@ -31,7 +31,7 @@ namespace Starter
             //btnPattern.Font = new Font(FontFamily.g, );
             btnPattern.Tag = patternDesc;
             btnPattern.Size = new Size(100, 100);
-            btnPattern.Location = new Point(20 + 110 * i, 20 + 100 * (i / 5));
+            btnPattern.Location = new Point(20 + 110 * (i%5), 20 + 100 * (i / 5));
             btnPattern.Click -= BtnPattern_Click;
             btnPattern.Click += BtnPattern_Click;
             CreatePatternToolTip(patternDesc, btnPattern);

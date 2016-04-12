@@ -1,10 +1,12 @@
 ﻿using System.Drawing;
 using System.ComponentModel;
-using Strategy.Elements.Base;
+using DP.Strategy.Elements.Base;
+using DP.Common.Attributes;
 
-namespace Strategy.Elements
+namespace DP.Strategy.Elements
 {
     [Description("Ellipse")]
+    [PatternSourceCode]
     public class EllipseElement : BaseElement
     {
         public override string MethodName

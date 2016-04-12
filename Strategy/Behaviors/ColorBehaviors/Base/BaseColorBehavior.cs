@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
-using Strategy.Behaviors.Base;
-using Strategy.Elements.Base;
+using DP.Strategy.Behaviors.Base;
+using DP.Strategy.Elements.Base;
+using DP.Common.Attributes;
 
-namespace Strategy.Behaviors.ColorBehaviors.Base
+namespace DP.Strategy.Behaviors.ColorBehaviors.Base
 {
+    [PatternSourceCode]
     public abstract class BaseColorBehavior : BaseBehavior
     {
         protected List<Color> _colors;

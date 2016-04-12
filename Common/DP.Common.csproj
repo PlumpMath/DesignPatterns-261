@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\PatternIconAttribute.cs" />
     <Compile Include="BaseStarElement.cs" />
     <Compile Include="IPattern.cs" />
     <Compile Include="Attributes\PatternSourceCodeAttribute.cs" />

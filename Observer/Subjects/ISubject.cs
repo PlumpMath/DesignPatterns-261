@@ -1,9 +1,11 @@
 ﻿
 using System.Drawing;
-using Observer.Observers.Base;
+using DP.Observer.Observers.Base;
+using DP.Common.Attributes;
 
-namespace Observer.Subjects
+namespace DP.Observer.Subjects
 {
+    [PatternSourceCode]
     public interface ISubject
     {
         void RegistrerObserver(BaseObserver observer);

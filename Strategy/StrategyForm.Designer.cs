@@ -1,4 +1,4 @@
-﻿namespace Strategy
+﻿namespace DP.Strategy
 {
     partial class StrategyForm
     {
@@ -108,7 +108,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "StrategyForm";
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
-using Observer.Observers.Base;
-using Observer.Subjects;
+using DP.Observer.Observers.Base;
+using DP.Observer.Subjects;
 using DP.Common;
+using DP.Common.Attributes;
 
-namespace Observer.Observers
+namespace DP.Observer.Observers
 {
     [Description("Star")]
+    [PatternSourceCode]
     public class StarElement : BaseObserver
     {
         public StarElement(Graphics graphics, Rectangle rect, ISubject subject)

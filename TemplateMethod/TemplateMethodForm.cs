@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Reflection;
-using TemplateMethod.Methods;
+using DP.TemplateMethod.Methods;
 
-namespace TemplateMethod
+namespace DP.TemplateMethod
 {
-    public partial class TemplateMethodForm : Form
+    public partial class TemplateMethodForm : UserControl
     {
         private Graphics graphics;
         private Point location;

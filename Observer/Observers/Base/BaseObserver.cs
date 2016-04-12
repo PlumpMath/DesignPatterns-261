@@ -1,9 +1,11 @@
 ﻿
 using System.Drawing;
-using Observer.Subjects;
+using DP.Observer.Subjects;
+using DP.Common.Attributes;
 
-namespace Observer.Observers.Base
+namespace DP.Observer.Observers.Base
 {
+    [PatternSourceCode]
     public abstract class BaseObserver
     {
         protected readonly ISubject _subject;

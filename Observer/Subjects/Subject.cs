@@ -1,10 +1,12 @@
 ﻿
 using System.Collections.Generic;
 using System.Drawing;
-using Observer.Observers.Base;
+using DP.Observer.Observers.Base;
+using DP.Common.Attributes;
 
-namespace Observer.Subjects
+namespace DP.Observer.Subjects
 {
+    [PatternSourceCode]
     public class Subject : ISubject
     {
         private readonly List<BaseObserver> observerList = new List<BaseObserver>();

@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 using System.ComponentModel;
+using DP.Common.Attributes;
 
-namespace TemplateMethod.Methods
+namespace DP.TemplateMethod.Methods
 {
     [Description("Rectangle")]
+    [PatternSourceCode]
     public class RectanglePaint:BasePaint
     {
         public RectanglePaint(Graphics graphics)

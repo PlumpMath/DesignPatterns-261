@@ -1,12 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
-using Strategy.Elements.Base;
+using DP.Strategy.Elements.Base;
 using DP.Common;
+using DP.Common.Attributes;
 
-namespace Strategy.Elements
+namespace DP.Strategy.Elements
 {
     [Description("Star")]
+    [PatternSourceCode]
     public class StarElement : BaseElement
     {
         public override string MethodName

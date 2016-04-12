@@ -1,10 +1,12 @@
 ﻿using System.Drawing;
 using System.ComponentModel;
-using Strategy.Elements.Base;
+using DP.Strategy.Elements.Base;
+using DP.Common.Attributes;
 
-namespace Strategy.Elements
+namespace DP.Strategy.Elements
 {
     [Description("Rect")]
+    [PatternSourceCode]
     public class RectangleElement : BaseElement
     {
         public override string MethodName

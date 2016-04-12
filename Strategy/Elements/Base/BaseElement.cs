@@ -1,8 +1,10 @@
 ﻿using System.Drawing;
-using Strategy.Behaviors.Base;
+using DP.Strategy.Behaviors.Base;
+using DP.Common.Attributes;
 
-namespace Strategy.Elements.Base
+namespace DP.Strategy.Elements.Base
 {
+    [PatternSourceCode]
     public abstract class BaseElement
     {
         private BaseBehavior _behavior;

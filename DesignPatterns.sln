@@ -5,15 +5,15 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Decorator", "Decorator\DP.Decorator.csproj", "{A521B4E1-8A4B-46A0-BD30-0C7951F1A88D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{FA5BC9AC-21CD-4167-B45F-29ED544DF885}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Strategy", "Strategy\DP.Strategy.csproj", "{FA5BC9AC-21CD-4167-B45F-29ED544DF885}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Common", "Common\DP.Common.csproj", "{B544B432-7B49-4985-9126-7E62270C05D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{D8D8122E-61D3-44CC-8448-30AD4666E4F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Observer", "Observer\DP.Observer.csproj", "{D8D8122E-61D3-44CC-8448-30AD4666E4F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.AbstractFactory", "AbstractFactory\DP.AbstractFactory.csproj", "{94DB39D3-F1C8-4A70-BB43-6C701AF17381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{C8BD2DC1-B2D3-496A-B13F-A1B9E7586F1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.TemplateMethod", "TemplateMethod\DP.TemplateMethod.csproj", "{C8BD2DC1-B2D3-496A-B13F-A1B9E7586F1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Adapter", "Adapter\DP.Adapter.csproj", "{D0D84905-7E55-404F-BFEB-5BA832178FAC}"
 EndProject

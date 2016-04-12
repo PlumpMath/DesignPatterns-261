@@ -1,13 +1,15 @@
 ﻿using System;
 using System.ComponentModel;
-using Strategy.Behaviors.ColorBehaviors.Base;
-using Strategy.Elements.Base;
+using DP.Strategy.Behaviors.ColorBehaviors.Base;
+using DP.Strategy.Elements.Base;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using DP.Common.Attributes;
 
-namespace Strategy.Behaviors.ColorBehaviors
+namespace DP.Strategy.Behaviors.ColorBehaviors
 {
     [Description("Brush")]
+    [PatternSourceCode]
     public class BrushBehavior : BaseColorBehavior
     {
         public BrushBehavior(BaseElement element, Graphics graphics)

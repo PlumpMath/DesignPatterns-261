@@ -1,11 +1,13 @@
 ﻿using System.Drawing;
 using System.ComponentModel;
-using Observer.Observers.Base;
-using Observer.Subjects;
+using DP.Observer.Observers.Base;
+using DP.Observer.Subjects;
+using DP.Common.Attributes;
 
-namespace Observer.Observers
+namespace DP.Observer.Observers
 {
     [Description("Rect")]
+    [PatternSourceCode]
     public class RectangleElement : BaseObserver
     {
         public RectangleElement(Graphics graphics, Rectangle rect, ISubject subject)

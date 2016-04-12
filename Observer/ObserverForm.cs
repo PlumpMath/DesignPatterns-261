@@ -4,12 +4,12 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
-using Observer.Observers.Base;
-using Observer.Subjects;
+using DP.Observer.Observers.Base;
+using DP.Observer.Subjects;
 
-namespace Observer
+namespace DP.Observer
 {
-    public partial class ObserverForm : Form
+    public partial class ObserverForm : UserControl
     {
         private int sideLength = 50;
         private Graphics graphics;

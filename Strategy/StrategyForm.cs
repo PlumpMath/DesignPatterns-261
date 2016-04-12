@@ -7,12 +7,12 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
-using Strategy.Behaviors.Base;
-using Strategy.Elements.Base;
+using DP.Strategy.Behaviors.Base;
+using DP.Strategy.Elements.Base;
 
-namespace Strategy
+namespace DP.Strategy
 {
-    public partial class StrategyForm : Form
+    public partial class StrategyForm : UserControl
     {
         private int sideLength = 100;
         private Graphics graphics;

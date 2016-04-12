@@ -1,12 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
-using Strategy.Behaviors.ColorBehaviors.Base;
-using Strategy.Elements.Base;
+using DP.Strategy.Behaviors.ColorBehaviors.Base;
+using DP.Strategy.Elements.Base;
 using System.Drawing;
+using DP.Common.Attributes;
 
-namespace Strategy.Behaviors.ColorBehaviors
+namespace DP.Strategy.Behaviors.ColorBehaviors
 {
     [Description("Pen")]
+    [PatternSourceCode]
     public class PenBehavior : BaseColorBehavior
     {
         public PenBehavior(BaseElement element, Graphics graphics)

@@ -1,4 +1,4 @@
-﻿namespace Observer
+﻿namespace DP.Observer
 {
     partial class ObserverForm
     {
@@ -137,7 +137,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "ObserverForm";
             this.Text = "ObserverForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ObserverForm_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

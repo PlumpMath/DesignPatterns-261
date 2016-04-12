@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Drawing;
 using System.Timers;
-using Strategy.Elements.Base;
+using DP.Strategy.Elements.Base;
+using DP.Common.Attributes;
 
-namespace Strategy.Behaviors.Base
+namespace DP.Strategy.Behaviors.Base
 {
+    [PatternSourceCode]
     public abstract class BaseBehavior
     {
         private readonly Timer _timer;

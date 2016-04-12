@@ -1,4 +1,4 @@
-﻿namespace TemplateMethod
+﻿namespace DP.TemplateMethod
 {
     partial class TemplateMethodForm
     {
@@ -82,7 +82,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "TemplateMethodForm";
             this.Text = "TemplateMethodForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TemplateMethodForm_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
