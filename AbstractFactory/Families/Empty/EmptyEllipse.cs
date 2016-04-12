@@ -1,9 +1,10 @@
 ﻿
 using System.Drawing;
-using AbstractFactory.Families.Base;
+using DP.AbstractFactory.Families.Base;
 using DP.Common;
+using DP.Common.Attributes;
 
-namespace AbstractFactory.Families.Empty
+namespace DP.AbstractFactory.Families.Empty
 {
     [PatternSourceCode]
     public class EmptyEllipse : BaseEllipse

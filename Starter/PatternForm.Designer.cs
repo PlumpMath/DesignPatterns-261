@@ -70,7 +70,7 @@
             this.tabPageSourceCode.Location = new System.Drawing.Point(4, 22);
             this.tabPageSourceCode.Name = "tabPageSourceCode";
             this.tabPageSourceCode.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSourceCode.Size = new System.Drawing.Size(604, 313);
+            this.tabPageSourceCode.Size = new System.Drawing.Size(604, 406);
             this.tabPageSourceCode.TabIndex = 1;
             this.tabPageSourceCode.Text = "SourceCode";
             this.tabPageSourceCode.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(598, 307);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(598, 400);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // cmbLanguage
@@ -140,7 +140,7 @@
             this.fastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
             this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
-            this.fastColoredTextBox1.Size = new System.Drawing.Size(592, 271);
+            this.fastColoredTextBox1.Size = new System.Drawing.Size(592, 364);
             this.fastColoredTextBox1.TabIndex = 4;
             this.fastColoredTextBox1.Text = "fastColoredTextBox1";
             this.fastColoredTextBox1.Zoom = 100;

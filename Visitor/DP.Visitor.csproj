@@ -7,8 +7,8 @@
     <ProjectGuid>{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Visitor</RootNamespace>
-    <AssemblyName>Visitor</AssemblyName>
+    <RootNamespace>DP.Visitor</RootNamespace>
+    <AssemblyName>DP.Visitor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,6 +46,11 @@
     <Compile Include="Elements\EllipseElement.cs" />
     <Compile Include="Elements\RectangleElement.cs" />
     <Compile Include="Elements\StarElement.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Views\VisitorView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -65,9 +70,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\VisitorView.resx">
       <DependentUpon>VisitorView.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_users.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

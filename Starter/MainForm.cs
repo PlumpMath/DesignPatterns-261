@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,10 +25,13 @@ namespace Starter
         private void CreatePatternButton(PatternDescription patternDesc, int i)
         {
             Button btnPattern = new Button();
+            btnPattern.Image = patternDesc.PatternInstance.Icon.ToBitmap();
+            btnPattern.TextAlign = ContentAlignment.BottomCenter;
             btnPattern.Text = patternDesc.DisplayName;
+            //btnPattern.Font = new Font(FontFamily.g, );
             btnPattern.Tag = patternDesc;
             btnPattern.Size = new Size(100, 100);
-            btnPattern.Location = new Point(20 + 110 * i, 20 + 100 * (i / 3));
+            btnPattern.Location = new Point(20 + 110 * i, 20 + 100 * (i / 5));
             btnPattern.Click -= BtnPattern_Click;
             btnPattern.Click += BtnPattern_Click;
             CreatePatternToolTip(patternDesc, btnPattern);

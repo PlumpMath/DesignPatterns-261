@@ -1,8 +1,8 @@
-﻿using DP.Common;
-using System.Drawing;
-using Visitor.Elements;
+﻿using System.Drawing;
+using DP.Common;
+using DP.Visitor.Elements;
 
-namespace Visitor.Visitors
+namespace DP.Visitor.Visitors
 {
     public class EmptyVisitor : BaseVisitor
     {

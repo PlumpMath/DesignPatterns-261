@@ -1,4 +1,4 @@
-﻿namespace Adapter
+﻿namespace DP.Adapter
 {
     partial class AdapterForm
     {

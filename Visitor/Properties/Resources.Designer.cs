@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DP.AbstractFactory.Properties {
+namespace DP.Visitor.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace DP.AbstractFactory.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DP.AbstractFactory.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DP.Visitor.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace DP.AbstractFactory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon factory {
+        internal static System.Drawing.Icon system_users {
             get {
-                object obj = ResourceManager.GetObject("factory", resourceCulture);
+                object obj = ResourceManager.GetObject("system_users", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

@@ -1,10 +1,9 @@
 ﻿using System.Drawing;
-using System.Drawing.Imaging;
 using System.Windows.Forms;
-using Adapter.Interfaces;
-using DP.Common;
+using DP.Adapter.Interfaces;
+using DP.Common.Attributes;
 
-namespace Adapter.Controls
+namespace DP.Adapter.Controls
 {
     [PatternSourceCode]
     public partial class GraphicsControl : UserControl, IPictureControl

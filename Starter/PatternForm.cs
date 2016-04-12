@@ -35,11 +35,16 @@ namespace Starter
             cmbFileName.DataSource = _typeSourceList.OrderBy(f => f.TypeDef.Name).ToList(); //.Select(t => t.TypeDef.Name).ToList();
             //cmbLanguage.DataSource = _typeSourceList.Select(t => t.TypeDef.Name);
 
-            var pattenr = Activator.CreateInstance(_patternDesc.PatternType) as IPattern;
-            var userControl = pattenr.GetView;
+            //var pattern = Activator.CreateInstance(_patternDesc.PatternType) as IPattern;
+            var userControl = _patternDesc.PatternInstance.GetView;
             userControl.Dock = DockStyle.Fill;
             tabPageUI.Controls.Add(userControl);
             Size = new Size(userControl.Size.Width,userControl.Size.Height+70);
+            if (_patternDesc.PatternInstance.Icon != null)
+            {
+                ShowIcon = true;
+                Icon = _patternDesc.PatternInstance.Icon;
+            }
         }
 
         private void cmbFileName_SelectedIndexChanged(object sender, EventArgs e)

@@ -1,4 +1,4 @@
-﻿namespace Visitor.Views
+﻿namespace DP.Visitor.Views
 {
     partial class VisitorView
     {

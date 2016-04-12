@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{A521B4E1-8A4B-46A0-BD30-0C7951F1A88D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Decorator", "Decorator\DP.Decorator.csproj", "{A521B4E1-8A4B-46A0-BD30-0C7951F1A88D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{FA5BC9AC-21CD-4167-B45F-29ED544DF885}"
 EndProject
@@ -11,15 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Common", "Common\DP.Comm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{D8D8122E-61D3-44CC-8448-30AD4666E4F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{94DB39D3-F1C8-4A70-BB43-6C701AF17381}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.AbstractFactory", "AbstractFactory\DP.AbstractFactory.csproj", "{94DB39D3-F1C8-4A70-BB43-6C701AF17381}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{C8BD2DC1-B2D3-496A-B13F-A1B9E7586F1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{D0D84905-7E55-404F-BFEB-5BA832178FAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Adapter", "Adapter\DP.Adapter.csproj", "{D0D84905-7E55-404F-BFEB-5BA832178FAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Starter", "Starter\DP.Starter.csproj", "{6560A8B4-3AC7-4051-BAAE-3BBD487738AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP.Visitor", "Visitor\DP.Visitor.csproj", "{7DBA80CB-B5C4-4BBA-B389-D3AF48A5B46D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

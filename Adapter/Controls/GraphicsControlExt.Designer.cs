@@ -1,4 +1,4 @@
-﻿namespace Adapter.Controls
+﻿namespace DP.Adapter.Controls
 {
     partial class GraphicsControlExt
     {

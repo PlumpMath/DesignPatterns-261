@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Reflection;
-using Decorator.Elements.Base;
-using Decorator.Elements;
+using System.Windows.Forms;
+using DP.Decorator.Elements;
+using DP.Decorator.Elements.Base;
 
-namespace Decorator
+namespace DP.Decorator
 {
-    public partial class DecoratorForm : Form
+    public partial class DecoratorForm : UserControl
     {
         private int sideLength = 50;
         private IElement currentElement;

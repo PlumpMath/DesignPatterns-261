@@ -1,8 +1,8 @@
 ﻿using System.Windows.Forms;
-using Adapter.Interfaces;
-using DP.Common;
+using DP.Adapter.Interfaces;
+using DP.Common.Attributes;
 
-namespace Adapter.Inheritance
+namespace DP.Adapter.Inheritance
 {
     [PatternSourceCode]
     public class PictureControlAdapterI :PictureBox, IPictureControl

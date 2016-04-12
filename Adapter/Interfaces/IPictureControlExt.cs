@@ -1,7 +1,6 @@
-﻿
-using DP.Common;
+﻿using DP.Common.Attributes;
 
-namespace Adapter.Interfaces
+namespace DP.Adapter.Interfaces
 {
     [PatternSourceCode]
     public interface IPictureControlExt : IPictureControl

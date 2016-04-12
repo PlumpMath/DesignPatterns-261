@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.ComponentModel;
 using System.Drawing;
-using System.ComponentModel;
-using Decorator.Elements.Base;
+using DP.Common.Attributes;
+using DP.Decorator.Elements.Base;
 
-namespace Decorator.Elements
+namespace DP.Decorator.Elements
 {
+    [PatternSourceCode]
     [Description("Rect")]
     public class RectangleElement : GraphicElement
     {

@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Drawing;
-using Decorator.Elements.Base;
+﻿using System.Drawing;
+using DP.Common.Attributes;
+using DP.Decorator.Elements.Base;
 
-namespace Decorator.Elements
+namespace DP.Decorator.Elements
 {
+    [PatternSourceCode]
     public class GraphicElement : IElement
     {
         private IElement _element;

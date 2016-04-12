@@ -1,8 +1,8 @@
 ﻿using System.Drawing;
-using Adapter.Interfaces;
-using DP.Common;
+using DP.Adapter.Interfaces;
+using DP.Common.Attributes;
 
-namespace Adapter.Composition
+namespace DP.Adapter.Composition
 {
     [PatternSourceCode]
     public class PictureControlExtAdapterC : PictureControlAdapterC, IPictureControlExt

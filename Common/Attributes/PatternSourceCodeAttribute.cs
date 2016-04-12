@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Drawing;
 
-namespace DP.Common
+namespace DP.Common.Attributes
 {
     public class PatternSourceCodeAttribute:Attribute
     {
+       
     }
 }

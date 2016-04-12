@@ -1,13 +1,8 @@
-﻿using DP.Common;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Visitor.Visitors;
+﻿using System.Drawing;
+using DP.Common.Attributes;
+using DP.Visitor.Visitors;
 
-namespace Visitor.Elements
+namespace DP.Visitor.Elements
 {
     [PatternSourceCode]
     public class StarElement:BaseElement

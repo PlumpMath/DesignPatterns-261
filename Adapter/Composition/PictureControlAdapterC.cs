@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Adapter.Interfaces;
-using DP.Common;
+using DP.Adapter.Interfaces;
+using DP.Common.Attributes;
 
-namespace Adapter.Composition
+namespace DP.Adapter.Composition
 {
     [PatternSourceCode]
     public class PictureControlAdapterC : Control, IPictureControl

@@ -5,10 +5,10 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
-using AbstractFactory.Factories.Base;
-using AbstractFactory.Families.Base;
+using DP.AbstractFactory.Factories.Base;
+using DP.AbstractFactory.Families.Base;
 
-namespace AbstractFactory
+namespace DP.AbstractFactory
 {
     public partial class AbstractFactoryForm : UserControl
     {

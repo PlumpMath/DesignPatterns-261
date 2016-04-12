@@ -23,10 +23,13 @@ namespace Starter
             DisplayName = dnAttr != null ? dnAttr.DisplayName : type.Name;
             var descrAttr = type.GetCustomAttribute(typeof(DescriptionAttribute)) as DescriptionAttribute;
             Description = descrAttr != null ? descrAttr.Description : string.Empty;
+            PatternInstance = Activator.CreateInstance(type) as IPattern;
         }
         public Type PatternType { get; private set; }
         public string DisplayName { get; private set; }
         public string Description { get; private set; }
+
+        public IPattern PatternInstance { get; private set; }
         public static IEnumerable<PatternDescription> GetPatternDescription()
         {
             List<PatternDescription> patternTypes = new List<PatternDescription>();

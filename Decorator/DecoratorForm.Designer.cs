@@ -1,4 +1,4 @@
-﻿namespace Decorator
+﻿namespace DP.Decorator
 {
     partial class DecoratorForm
     {
@@ -69,7 +69,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "DecoratorForm";
             this.Text = "DecoratorForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

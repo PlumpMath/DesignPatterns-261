@@ -1,8 +1,7 @@
-﻿
-using DP.Common;
-using System.Drawing;
+﻿using System.Drawing;
+using DP.Common.Attributes;
 
-namespace Adapter.Interfaces
+namespace DP.Adapter.Interfaces
 {
     [PatternSourceCode]
     public interface IPictureControl

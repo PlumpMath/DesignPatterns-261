@@ -1,8 +1,9 @@
 ﻿
-using AbstractFactory.Families.Base;
+using DP.AbstractFactory.Families.Base;
 using DP.Common;
+using DP.Common.Attributes;
 
-namespace AbstractFactory.Factories.Base
+namespace DP.AbstractFactory.Factories.Base
 {
     [PatternSourceCode]
     public interface IGuiFactory

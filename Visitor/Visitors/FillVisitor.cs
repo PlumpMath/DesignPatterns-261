@@ -1,8 +1,8 @@
 ﻿using System.Drawing;
-using Visitor.Elements;
 using DP.Common;
+using DP.Visitor.Elements;
 
-namespace Visitor.Visitors
+namespace DP.Visitor.Visitors
 {
     public class FillVisitor:BaseVisitor
     {

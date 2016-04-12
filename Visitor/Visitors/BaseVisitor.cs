@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Visitor.Elements;
+﻿using System.Drawing;
+using DP.Visitor.Elements;
 
-namespace Visitor.Visitors
+namespace DP.Visitor.Visitors
 {
     public abstract class BaseVisitor
     {

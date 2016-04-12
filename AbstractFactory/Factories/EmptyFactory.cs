@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel;
-using AbstractFactory.Factories.Base;
-using AbstractFactory.Families.Base;
-using AbstractFactory.Families.Empty;
+using DP.AbstractFactory.Factories.Base;
+using DP.AbstractFactory.Families.Base;
+using DP.AbstractFactory.Families.Empty;
 using DP.Common;
+using DP.Common.Attributes;
 
-namespace AbstractFactory.Factories
+namespace DP.AbstractFactory.Factories
 {
     [Description("Empty")]
     [PatternSourceCode]

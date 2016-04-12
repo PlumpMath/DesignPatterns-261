@@ -1,4 +1,4 @@
-﻿namespace AbstractFactory
+﻿namespace DP.AbstractFactory
 {
     partial class AbstractFactoryForm
     {
