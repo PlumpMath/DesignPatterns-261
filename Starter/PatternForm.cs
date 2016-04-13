@@ -35,15 +35,15 @@ namespace Starter
             cmbFileName.DataSource = _typeSourceList.OrderBy(f => f.TypeDef.Name).ToList(); //.Select(t => t.TypeDef.Name).ToList();
             //cmbLanguage.DataSource = _typeSourceList.Select(t => t.TypeDef.Name);
 
-            //var pattern = Activator.CreateInstance(_patternDesc.PatternType) as IPattern;
-            var userControl = _patternDesc.PatternInstance.GetView;
+            var pattern = Activator.CreateInstance(_patternDesc.PatternType) as IPattern;
+            var userControl = pattern.GetView;
             userControl.Dock = DockStyle.Fill;
             tabPageUI.Controls.Add(userControl);
             Size = new Size(userControl.Size.Width,userControl.Size.Height+70);
-            if (_patternDesc.PatternInstance.Icon != null)
+            if (_patternDesc.Icon != null)
             {
                 ShowIcon = true;
-                Icon = _patternDesc.PatternInstance.Icon;
+                Icon = _patternDesc.Icon;
             }
         }
 

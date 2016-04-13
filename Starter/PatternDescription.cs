@@ -11,6 +11,8 @@ using ICSharpCode.ILSpy.TextView;
 using ICSharpCode.ILSpy.VB;
 using Mono.Cecil;
 using System.ComponentModel;
+using System.Drawing;
+using DP.Common.Attributes;
 
 namespace Starter
 {
@@ -23,13 +25,15 @@ namespace Starter
             DisplayName = dnAttr != null ? dnAttr.DisplayName : type.Name;
             var descrAttr = type.GetCustomAttribute(typeof(DescriptionAttribute)) as DescriptionAttribute;
             Description = descrAttr != null ? descrAttr.Description : string.Empty;
-            PatternInstance = Activator.CreateInstance(type) as IPattern;
+
+            var iconAttr = type.GetCustomAttribute(typeof(PatternIconAttribute)) as PatternIconAttribute;
+            Icon = iconAttr?.Icon;
         }
         public Type PatternType { get; private set; }
         public string DisplayName { get; private set; }
         public string Description { get; private set; }
+        public Icon Icon { get; private set; }
 
-        public IPattern PatternInstance { get; private set; }
         public static IEnumerable<PatternDescription> GetPatternDescription()
         {
             List<PatternDescription> patternTypes = new List<PatternDescription>();
@@ -50,7 +54,7 @@ namespace Starter
                 }
             }
             AppDomain.Unload(patternsDomain);
-            return patternTypes;
+            return patternTypes.OrderBy(p => p.DisplayName);
         }
 
     }

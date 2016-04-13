@@ -25,7 +25,7 @@ namespace Starter
         private void CreatePatternButton(PatternDescription patternDesc, int i)
         {
             Button btnPattern = new Button();
-            btnPattern.Image = patternDesc.PatternInstance.Icon.ToBitmap();
+            btnPattern.Image = patternDesc.Icon.ToBitmap();
             btnPattern.TextAlign = ContentAlignment.BottomCenter;
             btnPattern.Text = patternDesc.DisplayName;
             //btnPattern.Font = new Font(FontFamily.g, );

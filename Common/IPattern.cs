@@ -6,6 +6,5 @@ namespace DP.Common
     public interface IPattern
     {
         Control GetView { get; }
-        Icon Icon { get; }
     }
 }
