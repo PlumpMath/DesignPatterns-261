@@ -28,61 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.btnLoad = new System.Windows.Forms.Button();
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.btnReverse = new System.Windows.Forms.Button();
             this.btnSaveExt = new System.Windows.Forms.Button();
             this.btnLoadExt = new System.Windows.Forms.Button();
-            this.btnReverse = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
-            this.splitContainer3.Panel1.SuspendLayout();
-            this.splitContainer3.SuspendLayout();
+            this.tabControlAdapter = new System.Windows.Forms.TabControl();
+            this.tabPageCommon = new System.Windows.Forms.TabPage();
+            this.tabPageExt = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tabControlAdapter.SuspendLayout();
+            this.tabPageCommon.SuspendLayout();
+            this.tabPageExt.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer1.Size = new System.Drawing.Size(753, 438);
-            this.splitContainer1.SplitterDistance = 391;
-            this.splitContainer1.TabIndex = 0;
-            // 
-            // splitContainer2
-            // 
-            this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.Controls.Add(this.btnLoad);
-            this.splitContainer2.Size = new System.Drawing.Size(391, 438);
-            this.splitContainer2.SplitterDistance = 129;
-            this.splitContainer2.TabIndex = 0;
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(140, 53);
+            this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLoad.Location = new System.Drawing.Point(664, 383);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(75, 23);
             this.btnLoad.TabIndex = 0;
@@ -90,27 +53,23 @@
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
-            // splitContainer3
+            // btnReverse
             // 
-            this.splitContainer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Name = "splitContainer3";
-            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer3.Panel1
-            // 
-            this.splitContainer3.Panel1.Controls.Add(this.btnReverse);
-            this.splitContainer3.Panel1.Controls.Add(this.btnSaveExt);
-            this.splitContainer3.Panel1.Controls.Add(this.btnLoadExt);
-            this.splitContainer3.Size = new System.Drawing.Size(358, 438);
-            this.splitContainer3.SplitterDistance = 131;
-            this.splitContainer3.TabIndex = 0;
+            this.btnReverse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReverse.Enabled = false;
+            this.btnReverse.Location = new System.Drawing.Point(664, 383);
+            this.btnReverse.Name = "btnReverse";
+            this.btnReverse.Size = new System.Drawing.Size(75, 23);
+            this.btnReverse.TabIndex = 3;
+            this.btnReverse.Text = "Reverse";
+            this.btnReverse.UseVisualStyleBackColor = true;
+            this.btnReverse.Click += new System.EventHandler(this.btnReverse_Click);
             // 
             // btnSaveExt
             // 
+            this.btnSaveExt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveExt.Enabled = false;
-            this.btnSaveExt.Location = new System.Drawing.Point(119, 53);
+            this.btnSaveExt.Location = new System.Drawing.Point(571, 383);
             this.btnSaveExt.Name = "btnSaveExt";
             this.btnSaveExt.Size = new System.Drawing.Size(75, 23);
             this.btnSaveExt.TabIndex = 2;
@@ -120,7 +79,8 @@
             // 
             // btnLoadExt
             // 
-            this.btnLoadExt.Location = new System.Drawing.Point(28, 53);
+            this.btnLoadExt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLoadExt.Location = new System.Drawing.Point(480, 383);
             this.btnLoadExt.Name = "btnLoadExt";
             this.btnLoadExt.Size = new System.Drawing.Size(75, 23);
             this.btnLoadExt.TabIndex = 1;
@@ -128,49 +88,85 @@
             this.btnLoadExt.UseVisualStyleBackColor = true;
             this.btnLoadExt.Click += new System.EventHandler(this.btnLoadExt_Click);
             // 
-            // btnReverse
+            // tabControlAdapter
             // 
-            this.btnReverse.Enabled = false;
-            this.btnReverse.Location = new System.Drawing.Point(212, 53);
-            this.btnReverse.Name = "btnReverse";
-            this.btnReverse.Size = new System.Drawing.Size(75, 23);
-            this.btnReverse.TabIndex = 3;
-            this.btnReverse.Text = "Reverse";
-            this.btnReverse.UseVisualStyleBackColor = true;
-            this.btnReverse.Click += new System.EventHandler(this.btnReverse_Click);
+            this.tabControlAdapter.Controls.Add(this.tabPageCommon);
+            this.tabControlAdapter.Controls.Add(this.tabPageExt);
+            this.tabControlAdapter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlAdapter.Location = new System.Drawing.Point(0, 0);
+            this.tabControlAdapter.Name = "tabControlAdapter";
+            this.tabControlAdapter.SelectedIndex = 0;
+            this.tabControlAdapter.Size = new System.Drawing.Size(753, 438);
+            this.tabControlAdapter.TabIndex = 1;
+            // 
+            // tabPageCommon
+            // 
+            this.tabPageCommon.Controls.Add(this.panel1);
+            this.tabPageCommon.Controls.Add(this.btnLoad);
+            this.tabPageCommon.Location = new System.Drawing.Point(4, 22);
+            this.tabPageCommon.Name = "tabPageCommon";
+            this.tabPageCommon.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCommon.Size = new System.Drawing.Size(745, 412);
+            this.tabPageCommon.TabIndex = 0;
+            this.tabPageCommon.Text = "IPictureControl";
+            this.tabPageCommon.UseVisualStyleBackColor = true;
+            // 
+            // tabPageExt
+            // 
+            this.tabPageExt.Controls.Add(this.panel2);
+            this.tabPageExt.Controls.Add(this.btnReverse);
+            this.tabPageExt.Controls.Add(this.btnSaveExt);
+            this.tabPageExt.Controls.Add(this.btnLoadExt);
+            this.tabPageExt.Location = new System.Drawing.Point(4, 22);
+            this.tabPageExt.Name = "tabPageExt";
+            this.tabPageExt.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageExt.Size = new System.Drawing.Size(745, 412);
+            this.tabPageExt.TabIndex = 1;
+            this.tabPageExt.Text = "IPictureControlExt";
+            this.tabPageExt.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(739, 362);
+            this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(739, 362);
+            this.panel2.TabIndex = 4;
             // 
             // AdapterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 438);
-            this.Controls.Add(this.splitContainer1);
+            this.AutoScroll = true;
+            this.Controls.Add(this.tabControlAdapter);
             this.Name = "AdapterForm";
-            this.Text = "AdapterForm";
+            this.Size = new System.Drawing.Size(753, 438);
             this.Load += new System.EventHandler(this.AdapterForm_Load);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
-            this.splitContainer3.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
-            this.splitContainer3.ResumeLayout(false);
+            this.tabControlAdapter.ResumeLayout(false);
+            this.tabPageCommon.ResumeLayout(false);
+            this.tabPageExt.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnSaveExt;
         private System.Windows.Forms.Button btnLoadExt;
         private System.Windows.Forms.Button btnReverse;
+        private System.Windows.Forms.TabControl tabControlAdapter;
+        private System.Windows.Forms.TabPage tabPageCommon;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TabPage tabPageExt;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
