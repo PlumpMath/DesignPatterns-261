@@ -12,8 +12,8 @@ namespace DP.AbstractFactory
 {
     public partial class AbstractFactoryForm : UserControl
     {
-        private Graphics graphics;
         private Type _currentFactoryType;
+        private List<BaseElement> _elements;
         public AbstractFactoryForm()
         {
             InitializeComponent();
@@ -21,7 +21,6 @@ namespace DP.AbstractFactory
 
         private void AbstractFactoryForm_Load(object sender, EventArgs e)
         {
-            graphics = panel2.CreateGraphics();
             Assembly assembly = Assembly.GetExecutingAssembly();
             var types = assembly.GetTypes().Where(t => t.GetInterface("IGuiFactory")!=null);
             int y = 20;
@@ -53,25 +52,48 @@ namespace DP.AbstractFactory
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            var factory =  Activator.CreateInstance(_currentFactoryType) as IGuiFactory;
+            CreateAndDraw();
+        }
+
+        private void CreateAndDraw()
+        {
+            var factory = Activator.CreateInstance(_currentFactoryType) as IGuiFactory;
             var ellipse = factory.CreateEllipse();
             var rectElement = factory.CreateRectangle();
             var star = factory.CreateStar();
-            List<BaseElement> elements = new List<BaseElement>(){ellipse,rectElement,star};
-            DrawElements(elements);
+            _elements = new List<BaseElement>() { ellipse, rectElement, star };
+            DrawElements();
+
         }
-        private void DrawElements(List<BaseElement> elements)
+        private void DrawElements()
         {
+            var graphics = panel2.CreateGraphics();
             graphics.Clear(Color.LightGray);
-            int x = 50;
-            foreach (var baseElement in elements)
+            if(_elements==null) return;
+            var h = ClientSize.Height/((_elements.Count+1));
+            var w  = ClientSize.Width /( (_elements.Count + 1));
+            var y = w/2;
+            var x = h/2;
+            foreach (var baseElement in _elements)
             {
-                Rectangle rect = new Rectangle(x, 100, 100, 100);
+                Rectangle rect = new Rectangle(x, y, h, w);
                 baseElement.Graphics = graphics;
                 baseElement.Rect = rect;
                 baseElement.Draw();
-                x += 200;
+                x += w;
             }
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            DrawElements();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            _elements = null;
+            DrawElements();
         }
     }
 }

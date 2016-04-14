@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -37,6 +38,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.btnCreate);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -44,6 +46,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(865, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(315, 38);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(76, 41);
+            this.btnClear.TabIndex = 2;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnCreate
             // 
@@ -67,6 +79,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.LightGray;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
@@ -77,11 +90,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 381);
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AbstractFactoryForm";
-            this.Text = "AbstractFactory";
+            this.Size = new System.Drawing.Size(865, 381);
             this.Load += new System.EventHandler(this.AbstractFactoryForm_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -94,6 +107,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
