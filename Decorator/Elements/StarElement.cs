@@ -10,15 +10,17 @@ namespace DP.Decorator.Elements
     [Description("Star")]
     public class StarElement : GraphicElement
     {
-        public StarElement(Graphics graphics, IElement element,Rectangle rect)
-            : base(graphics, element,rect)
+        public StarElement(IElement element, int sideLength)
+            : base(element,sideLength)
         {
         }
 
-        public override void Draw()
+        public override void Draw(Graphics graphics, Point location)
         {
-            base.Draw();
-            _graphics.DrawPolygon(Pens.Yellow, BaseStarElement.Calculate5StarPoints(_rect.Location,_rect.Width,_rect.Width/2));
+            base.Draw(graphics,location);
+            var rect = new Rectangle(location, new Size(_sideLength, _sideLength));
+            graphics.DrawPolygon(Pens.Yellow,
+                BaseStarElement.Calculate5StarPoints(rect.Location, _sideLength, _sideLength/2));
         }
         
       

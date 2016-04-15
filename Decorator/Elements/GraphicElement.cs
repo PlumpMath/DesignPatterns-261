@@ -7,27 +7,17 @@ namespace DP.Decorator.Elements
     [PatternSourceCode]
     public class GraphicElement : IElement
     {
-        private IElement _element;
-        protected Graphics _graphics;
-        protected Rectangle _rect;
+        private readonly IElement _element;
+        protected int _sideLength;
 
-        public GraphicElement(Graphics graphics, IElement element, Rectangle rect)
+        public GraphicElement(IElement element, int sideLength)
         {
-            _graphics = graphics;
             _element = element;
-            _rect = rect;
+            _sideLength = sideLength;
         }
-        public virtual void Draw()
+        public virtual void Draw(Graphics graphics,Point location)
         {
-            _element.Draw();
+            _element.Draw(graphics,location);
         }
-
-        //protected Pen CurrentPen
-        //{
-        //    get
-        //    {
-        //        return Pens.Cyan;
-        //    }
-        //}
     }
 }

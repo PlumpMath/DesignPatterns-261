@@ -9,15 +9,15 @@ namespace DP.Decorator.Elements
     [Description("Rect")]
     public class RectangleElement : GraphicElement
     {
-        public RectangleElement(Graphics graphics, IElement element, Rectangle rect)
-            :base(graphics, element,rect)
+        public RectangleElement(IElement element, int sideLength)
+            :base(element,sideLength)
         {
         }
 
-        public override void Draw()
+        public override void Draw(Graphics graphics, Point location)
         {
-            base.Draw();
-            _graphics.DrawRectangle(Pens.Red, _rect);
+            base.Draw(graphics,location);
+            graphics.DrawRectangle(Pens.Red, new Rectangle(location, new Size(_sideLength, _sideLength)));
         }
     }
 }

@@ -9,15 +9,15 @@ namespace DP.Decorator.Elements
     [PatternSourceCode]
     public class EllipseElement : GraphicElement
     {
-        public EllipseElement(Graphics graphics, IElement element,Rectangle rect)
-            : base(graphics, element,rect)
+        public EllipseElement(IElement element, int sideLength)
+            : base(element,sideLength)
         {
         }
 
-        public override void Draw()
+        public override void Draw(Graphics graphics, Point location)
         {
-            base.Draw();
-            _graphics.DrawEllipse(Pens.Green, _rect);
+            base.Draw(graphics,location);
+            graphics.DrawEllipse(Pens.Green, new Rectangle(location,new Size(_sideLength,_sideLength)));
         }
     }
 }
