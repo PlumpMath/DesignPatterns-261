@@ -17,7 +17,7 @@ namespace DP.Decorator.Elements
         public override void Draw(Graphics graphics, Point location)
         {
             base.Draw(graphics,location);
-            graphics.DrawRectangle(Pens.Red, new Rectangle(location, new Size(_sideLength, _sideLength)));
+            graphics.DrawRectangle(Pens.Red, new Rectangle(new Point(location.X-_sideLength/2,location.Y-_sideLength/2), new Size(_sideLength, _sideLength)));
         }
     }
 }

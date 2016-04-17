@@ -17,7 +17,7 @@ namespace DP.Decorator.Elements
         public override void Draw(Graphics graphics, Point location)
         {
             base.Draw(graphics,location);
-            graphics.DrawEllipse(Pens.Green, new Rectangle(location,new Size(_sideLength,_sideLength)));
+            graphics.DrawEllipse(Pens.Green, new Rectangle(new Point(location.X - _sideLength / 2, location.Y - _sideLength / 2), new Size(_sideLength, _sideLength)));
         }
     }
 }

@@ -15,9 +15,6 @@ namespace DP.Decorator.Elements
             _element = element;
             _sideLength = sideLength;
         }
-        public virtual void Draw(Graphics graphics,Point location)
-        {
-            _element.Draw(graphics,location);
-        }
+        public virtual void Draw(Graphics graphics,Point location) =>_element.Draw(graphics,location);
     }
 }
