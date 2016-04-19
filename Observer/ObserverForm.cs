@@ -24,6 +24,7 @@ namespace DP.Observer
         {
             RadioButton rb = sender as RadioButton;
             _subject.SetElementColor(getColor(rb.Text));
+            Draw();
         }
 
         private Color getColor(string name)
@@ -77,12 +78,22 @@ namespace DP.Observer
                 _subject.RegistrerObserver(graphicElement);
             else
                 _subject.UnRegistrerObserver(graphicElement);
+            Draw();
         }
 
         private void btnDraw_Click(object sender, EventArgs e)
         {
+            Draw();
+        }
+
+        private void Draw()
+        {
             graphics.Clear(Color.LightGray);
             _subject.NotifyObservers();
         }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            Draw();
+        }      
     }
 }

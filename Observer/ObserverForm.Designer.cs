@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDraw = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -42,7 +41,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnDraw);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -50,16 +48,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(676, 100);
             this.panel1.TabIndex = 0;
-            // 
-            // btnDraw
-            // 
-            this.btnDraw.Location = new System.Drawing.Point(429, 19);
-            this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Size = new System.Drawing.Size(75, 23);
-            this.btnDraw.TabIndex = 2;
-            this.btnDraw.Text = "Draw";
-            this.btnDraw.UseVisualStyleBackColor = true;
-            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
             // groupBox2
             // 
@@ -132,11 +120,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 327);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ObserverForm";
-            this.Text = "ObserverForm";
+            this.Size = new System.Drawing.Size(676, 327);
             this.Load += new System.EventHandler(this.ObserverForm_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -154,7 +141,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnDraw;
     }
 }
 

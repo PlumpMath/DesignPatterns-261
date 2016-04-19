@@ -18,9 +18,8 @@ namespace DP.Decorator.Elements
         public override void Draw(Graphics graphics, Point location)
         {
             base.Draw(graphics,location);
-            var rect = new Rectangle(location, new Size(_sideLength, _sideLength));
             graphics.DrawPolygon(Pens.Yellow,
-                BaseStarElement.Calculate5StarPoints(rect.Location, _sideLength, _sideLength/2));
+                BaseStarElement.Calculate5StarPointsCenter(location, _sideLength, _sideLength/2));
         }
         
       
